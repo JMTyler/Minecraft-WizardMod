@@ -1,0 +1,7 @@
+WARNING: Based on Minecraft 1.8.1.  There MAY be incompatibilities.
+
+This mod adds the Wizard class to the game, based upon the specification laid out with the ClassesMod description.
+
+Wizards have a set of staves they may use to cast various spells, which consume hunger but can be very powerful.
+
+Requires ModLoader.
