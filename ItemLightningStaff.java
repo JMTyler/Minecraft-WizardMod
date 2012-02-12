@@ -10,12 +10,8 @@ package net.minecraft.src;
 
 public class ItemLightningStaff extends ItemWizardStaff
 {
-    public ItemLightningStaff()
-    {
-		super(mod_Classes.getUniqueItemId());
-	}
-
-	public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
+	@Override
+    public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
     {
     	world.addWeatherEffect(new EntityLightningBolt(world, blockX, blockY, blockZ));
     }

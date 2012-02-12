@@ -10,16 +10,10 @@ package net.minecraft.src;
 
 public class ItemHolyStaff extends ItemWizardStaff
 {
-	public ItemHolyStaff()
-	{
-		super(mod_Classes.getUniqueItemId());
-	}
-
+	@Override
 	public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
     {
-		//String msg = Item.itemsList[256 + 113] == null ? "No item" : "Name: " + Item.itemsList[256 + 113].getItemName();
-		//ModLoader.getMinecraftInstance().ingameGUI.addChatMessage(msg);
-        EntityGlowingOrb glowingOrb = new EntityGlowingOrb(world, (float)blockX + 0.5F, (float)blockY + 1.5F, (float)blockZ + 0.5F);
+		EntityGlowingOrb glowingOrb = new EntityGlowingOrb(world, (float)blockX + 0.5F, (float)blockY + 1.5F, (float)blockZ + 0.5F);
         world.entityJoinedWorld(glowingOrb);
     }
 }

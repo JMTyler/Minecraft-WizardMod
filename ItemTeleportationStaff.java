@@ -10,11 +10,7 @@ package net.minecraft.src;
 
 public class ItemTeleportationStaff extends ItemWizardStaff
 {
-	public ItemTeleportationStaff()
-	{
-		super(mod_Classes.getUniqueItemId());
-	}
-
+	@Override
 	public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
     {
 		entityplayer.setPosition(blockX + 0.5F, blockY + 3.5F, blockZ + 0.5F);

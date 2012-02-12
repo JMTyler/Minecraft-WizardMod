@@ -10,11 +10,7 @@ package net.minecraft.src;
 
 public class ItemFireStaff extends ItemWizardStaff
 {
-	public ItemFireStaff()
-	{
-		super(mod_Classes.getUniqueItemId());
-	}
-
+	@Override
 	public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
     {
 		int r = 2;

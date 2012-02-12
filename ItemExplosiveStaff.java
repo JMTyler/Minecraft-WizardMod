@@ -10,11 +10,7 @@ package net.minecraft.src;
 
 public class ItemExplosiveStaff extends ItemWizardStaff
 {
-	public ItemExplosiveStaff()
-	{
-		super(mod_Classes.getUniqueItemId());
-	}
-
+	@Override
 	public void onSuccessfulSpell(World world, EntityPlayer entityplayer, int blockX, int blockY, int blockZ)
     {
 		world.createExplosion(null, blockX, blockY + 1, blockZ, 3F);
