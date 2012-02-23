@@ -66,6 +66,5 @@ public abstract class ItemWizardStaff extends ItemClassWeapon
     	super.onFailedRightClick(itemstack, world, entityplayer);
     	
     	entityplayer.attackEntityFrom(new EntityDamageSource("player", entityplayer), 6);
-		entityplayer.damageEntity(6);
     }
 }
